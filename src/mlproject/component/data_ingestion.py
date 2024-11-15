@@ -4,7 +4,6 @@ from src.mlproject.exception import CustomException
 from src.mlproject.logger import log as logging
 import pandas as pd
 from src.mlproject.utils import read_sql_data
-
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
 
@@ -31,5 +30,12 @@ class DataIngestion:
             df.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
             df.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
             
+            logging.info("Data ingestion is completed")
+            
+            return(
+                self.ingestion_config.train_data_path,
+                self.ingestion_config.test_data_path
+            ) 
+        
         except Exception as e:
             raise CustomException(e,sys)
