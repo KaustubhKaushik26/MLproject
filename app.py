@@ -3,6 +3,8 @@ from src.mlproject.exception import CustomException
 import sys
 from src.mlproject.component.data_ingestion import DataIngestion
 from src.mlproject.component.data_ingestion import DataIngestionConfig
+from src.mlproject.component.data_tranformation import DataTranformationConfig,DataTranformation
+
 
 if __name__=='__main__':
     logging.info('The execution has started')
@@ -11,7 +13,11 @@ if __name__=='__main__':
     try:
         #data_ingestion_config=data_ingestion_config()
         data_ingestion=DataIngestion()
-        data_ingestion.initiate_data_ingestion()
+        train_data_path,test_data_path = data_ingestion.initiate_data_ingestion()
+        
+        #data_tranformation_config = DataIngestionConfig()
+        data_tranformation=DataTranformation()
+        data_tranformation.initiate_data_transformation(train_data_path,test_data_path)
       
     except Exception as e:
         logging.info("Custom Exception")
