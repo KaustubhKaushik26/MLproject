@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/kaust/MLproject/mlruns/0/7c867e0e794c4dfe9e3351dc1be46207/artifacts
+end_time: 1731861973732
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c867e0e794c4dfe9e3351dc1be46207
+run_name: delicate-worm-646
+run_uuid: 7c867e0e794c4dfe9e3351dc1be46207
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731861973700
+status: 4
+tags: []
+user_id: root

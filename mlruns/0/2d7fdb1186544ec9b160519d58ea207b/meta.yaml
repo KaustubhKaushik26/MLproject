@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/kaust/MLproject/mlruns/0/2d7fdb1186544ec9b160519d58ea207b/artifacts
+end_time: 1731862619248
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2d7fdb1186544ec9b160519d58ea207b
+run_name: skittish-shrew-222
+run_uuid: 2d7fdb1186544ec9b160519d58ea207b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731862607451
+status: 3
+tags: []
+user_id: root
